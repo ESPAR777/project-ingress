@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parshuram Coffee Shop</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#4b2e2e;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#fff;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a{
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#4b2e2e;
+    font-size:18px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.menu-item{
+    border:1px solid #eee;
+    padding:15px;
+    border-radius:8px;
+}
+
+.menu-item h3{
+    margin-bottom:5px;
+    color:#4b2e2e;
+}
+
+.price{
+    color:green;
+    font-weight:bold;
+}
+
+form{
+    display:grid;
+    gap:15px;
+}
+
+input, textarea{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:12px;
+    border:none;
+    background:#4b2e2e;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#6b3f3f;
+}
+
+.contact-info{
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>☕ cafe-Coffee Shop</h1>
+<p>Fresh Coffee • Cozy Place • Great Taste</p>
+</header>
+
+<nav>
+<a href="/">Home</a>
+<a href="/menu">Menu</a>
+<a href="/contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<!-- HOME -->
+<div class="card">
+<h2>Welcome</h2>
+<p>Welcome to our coffee shop! This website is deployed on Kubernetes for testing Ingress routing.</p>
+</div>
+
+
+<!-- MENU -->
+<div class="card">
+<h2>☕ Our Coffee Menu</h2>
+
+<div class="menu-grid">
+
+<div class="menu-item">
+<h3>Espresso</h3>
+<p>Strong and rich espresso shot.</p>
+<p class="price">₹120</p>
+</div>
+
+<div class="menu-item">
+<h3>Cappuccino</h3>
+<p>Espresso with steamed milk foam.</p>
+<p class="price">₹180</p>
+</div>
+
+<div class="menu-item">
+<h3>Latte</h3>
+<p>Smooth blend of espresso and milk.</p>
+<p class="price">₹200</p>
+</div>
+
+<div class="menu-item">
+<h3>Cold Brew</h3>
+<p>Slow brewed cold coffee for refreshing taste.</p>
+<p class="price">₹220</p>
+</div>
+
+<div class="menu-item">
+<h3>Mocha</h3>
+<p>Chocolate flavored coffee delight.</p>
+<p class="price">₹210</p>
+</div>
+
+<div class="menu-item">
+<h3>Caramel Latte</h3>
+<p>Latte with sweet caramel flavor.</p>
+<p class="price">₹230</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CONTACT -->
+<div class="card">
+
+<h2>📞 Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number">
+
+<input type="text" placeholder="Subject">
+
+<textarea rows="4" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<div class="contact-info">
+
+<h3>Store Information</h3>
+
+<p><strong>Address:</strong> Bangalore, India</p>
+<p><strong>Phone:</strong> +91 9876543210</p>
+<p><strong>Email:</strong> coffee@example.com</p>
+<p><strong>Opening Hours:</strong> 8 AM - 10 PM</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven ☕</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background-color: #f7f3ef;
+            color: #3e2c1c;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #c19a6b;
+            color: white;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #a57c4f;
+        }
+
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-item {
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .menu-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #c19a6b;
+        }
+
+        footer {
+            background-color: #3e2c1c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Brew Haven ☕</h1>
+            <p>Your daily dose of happiness in a cup</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </header>
+
+    <section id="menu">
+        <h2 class="section-title">Our Special Menu</h2>
+
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Espresso</h3>
+                <p>Rich & bold single shot</p>
+                <p class="price">₹120</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Cappuccino</h3>
+                <p>Creamy milk with perfect foam</p>
+                <p class="price">₹180</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Latte</h3>
+                <p>Smooth & milky delight</p>
+                <p class="price">₹200</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Cold Brew</h3>
+                <p>Slow brewed, extra refreshing</p>
+                <p class="price">₹220</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Why Brew Haven?</h2>
+        <p>
+            We serve ethically sourced beans, handcrafted brews,
+            and a cozy atmosphere designed for conversations, creativity,
+            and comfort.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Brew Haven | Freshly brewed with ❤️</p>
+    </footer>
+
+</body>
+</html>
