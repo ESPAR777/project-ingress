@@ -25,7 +25,7 @@ stages {
     stage('Build Docker Image') {
         steps {
             sh '''
-            docker build -t myapp .
+            docker build -t myapp ./dockerdjango
             '''
         }
     }
