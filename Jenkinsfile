@@ -11,6 +11,7 @@ stages {
     stage('Checkout') {
         steps {
             git 'https://github.com/ESPAR777/project-ingress.git'
+            sh 'ls -l'
         }
     }
 }
